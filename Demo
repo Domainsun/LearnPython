@@ -1,0 +1,72 @@
+# 2018年1月17日19:28:51
+
+
+# 变量
+name="domain"
+
+# 赋值
+name2=name
+name="你好，世界"
+print(name,name2,"\n",name2)
+
+# 多行字符串
+
+msg='''
+domain1
+domain2
+domain3
+'''
+print(msg)
+
+# user input   用户输入
+
+userName=input("userName:")
+passWord=input("passWord:")
+
+print(userName,passWord)
+
+# input format & class cast      :     格式化输出和类型转化
+
+name=input("name:")
+job=input("job:")
+age=int(input("age:"))
+
+info='''
+----------------info of {_name}------------
+name:{_name}
+job:{_job}
+age:{_age}
+'''.format(_name=name,_job=job,_age=age)
+print(info)
+print(type(age))
+
+
+
+# if else       逻辑判断，流程控制
+_userName="domain"
+_passWord="123"
+
+userName=input("userName:")
+passWord=input("passWord:")
+
+if userName==_userName and passWord ==_passWord:
+    print("Welcome user {name} login...".format(name=_userName))
+else:
+    print("invail user name or password")
+
+age=int(input(" guess age:"))
+
+age1=33
+
+if age==age1:
+    print("you are right!")
+elif age>age1:
+    print("think smaller...")
+else:
+    print("think higher...")
+
+
+#  while          循环
+
+
+
